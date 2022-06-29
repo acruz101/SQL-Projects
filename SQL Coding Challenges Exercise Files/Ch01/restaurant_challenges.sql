@@ -114,3 +114,5 @@ SELECT C.CustomerID, c.LastName, o.OrderID, o.CustomerID, o.OrderDate, ordersWit
 SELECT SUM(d.Price) AS Total FROM OrdersDishes as od 
     JOIN Dishes as d on od.DishID = d.DishID 
     WHERE od.OrderID = 1001;
+
+
