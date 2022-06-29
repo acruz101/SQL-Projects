@@ -116,3 +116,29 @@ SELECT SUM(d.Price) AS Total FROM OrdersDishes as od
     WHERE od.OrderID = 1001;
 
 
+/**************************************************************/
+/* Track Customer Favourite */
+/**************************************************************/
+SELECT * FROM Customers;
+SELECT * FROM Dishes;
+
+SELECT c.CustomerID, c.FirstName, c.LastName, c.FavoriteDish, d.Name FROM Customers AS c 
+    JOIN Dishes AS d 
+    ON c.FavoriteDish = d.DishID;
+
+SELECT c.CustomerID, c.FirstName, c.LastName, c.FavoriteDish, d.Name FROM Customers AS c 
+    JOIN Dishes AS d 
+    ON c.FavoriteDish = d.DishID
+    WHERE FirstName = "Cleo" AND LastName="Goldwater";
+
+
+/**************************************************************/
+/* Prepare a report of your top five customers */
+/**************************************************************/
+--Step 1: Find top 5 customers with most orders
+SELECT CustomerID, COUNT(OrderID) AS TotalOrders FROM Orders GROUP BY CustomerID ORDER BY TotalOrders DESC LIMIT 5;
+
+--Step 2: Find top 5 customers'  names and emails
+SELECT c.CustomerID, c.FirstName, c.LastName, c.Email, top5.TotalOrders FROM Customers AS c
+    JOIN (SELECT CustomerID, COUNT(OrderID) AS TotalOrders FROM Orders GROUP BY CustomerID ORDER BY TotalOrders DESC LIMIT 5) AS top5
+    ON c.CustomerID = top5.CustomerID;
