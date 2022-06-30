@@ -8,4 +8,4 @@ SQL projects from various courses.
 
 ## [Workshop on Databases and SQL](https://github.com/acruz101/SQL-Projects/tree/main/UCB-SCF-workshop)
 + SQLite
-+ UC Berkeley Workshop: [SCF workshop on databases and SQL]([https://www.linkedin.com/learning/sql-code-challenges/sql-code-challenges?autoplay=true](https://github.com/berkeley-scf/sql-scf-2021))
++ UC Berkeley Workshop: [SCF workshop on databases and SQL](https://github.com/berkeley-scf/sql-scf-2021)
