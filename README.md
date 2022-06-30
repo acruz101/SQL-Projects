@@ -1,4 +1,4 @@
-# SQL-Projects
+# SQL Projects
 SQL projects from various courses.
 
 ## [SQL Code Challenges](https://github.com/acruz101/SQL-Projects/tree/main/SQL%20Coding%20Challenges%20Exercise%20Files)
