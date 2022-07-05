@@ -10,6 +10,6 @@ SQL projects from various courses.
 + SQLite
 + UC Berkeley Workshop: [SCF workshop on databases and SQL](https://github.com/berkeley-scf/sql-scf-2021)
 
-## [UC Berkeley Data 100 SQL Lab/Workshop]()
+## [UC Berkeley Data 100 SQL Lab/Workshop](https://github.com/acruz101/SQL-Projects/tree/main/UCB-DATA-100-workshop)
 + SQLite, Pandas, Python
-+ UC Berkeley Data 100 Course: [SQL Workshop]()
++ UC Berkeley Data 100 Course: [SQL Workshop](https://ds100.org)
